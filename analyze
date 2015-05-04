@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# shebang ^^
+# tell the shell what program to use
+# to "interpret" this script
+require "./char_count"
+
+input = ARGV.join(" ")
+
+puts CharCount.new.count(input)
